@@ -73,7 +73,7 @@ function getPolygonCoordinates(features: Feature[]): Position[] {
     .slice(0, -1)
     .map(
       ([lat, lon]) =>
-        [Number(lon.toFixed(6)), Number(lat.toFixed(6))] as Position,
+        [Number(lat.toFixed(6)), Number(lon.toFixed(6))] as Position,
     );
 }
 
